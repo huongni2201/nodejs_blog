@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
+    "format": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "sass --watch src/resources/scss/:src/public/css/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install"
   },
   "keywords": [
     "f8",
@@ -17,13 +18,21 @@
   "author": "huong",
   "license": "ISC",
   "description": "",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": [
+      "prettier --write --single-quote --trailing-comma all --tab-width 4"
+    ]
+  },
   "dependencies": {
     "express": "^4.21.2",
     "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.7",
+    "prettier": "^3.4.2",
     "sass": "^1.82.0"
   }
 }
