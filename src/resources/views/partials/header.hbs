@@ -1,36 +1,36 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <div class="container"> <!-- Thêm container để căn lề -->
+    <div class="container-fluid d-flex justify-content-between"> <!-- Sử dụng d-flex và justify-content-between -->
+      <a class="navbar-brand" href="/">F8 Education</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- Thêm ms-auto để đẩy dropdown sang phải -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img
+                src="https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-1/331128624_923149312039349_7123416543553814827_n.jpg?stp=c0.371.1677.1677a_cp0_dst-jpg_s40x40_tt6&_nc_cat=109&ccb=1-7&_nc_sid=6738e8&_nc_ohc=c-Iboo9LjdMQ7kNvgH7jpKn&_nc_zt=24&_nc_ht=scontent.fhan18-1.fna&_nc_gid=ANuhYKhR9Q8tq76TpPS_SnM&oh=00_AYCGco7qRTeW9Dd3hD2KbXGiwA9JzwCYiHWE6CRvpDCkmg&oe=6760677F"
+                alt="" class="user-avatar">
+              Hưởng Nguyễn
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/courses/create">Đăng khóa học</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/me/stored/courses">Khóa học của tôi</a></li>
+              <li><a class="dropdown-item" href="/me/stored/news">Bài viết của tôi</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/courses/create">Đăng xuất</a></li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>

@@ -1,13 +1,12 @@
-@import 'variables';
+@use 'variables' as var;
 
-h1 {
-    color: $red-color;
+.user-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 4px;
 }
 
-h2 {
-    color: green;
-}
-
-h3 {
-    color: yellow;
+.trash-courses-icon {
+    font-size: 18px;
 }
